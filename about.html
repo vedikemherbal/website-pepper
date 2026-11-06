@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>संस्था परिचय (About Us) | Shri Shayma Shyam Ju Trust</title>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shri Shayma Shyam Ju Trust | Religious &amp; Social Service Organization</title>
+  
+  <!-- Google Fonts: Hind (300, 400, 500, 600, 700) and Cinzel Decorative for temple aesthetics -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&amp;family=Cinzel:wght@500;600;700;800;900&amp;family=Rozha+One&amp;family=Marcellus&amp;display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome 6.5.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Hind', 'sans-serif'],
+            hind: ['Hind', 'sans-serif'],
+            serif: ['Marcellus', 'Hind', 'serif'],
+            royal: ['Cinzel', 'serif'],
+            heading: ['Rozha One', 'Hind', 'serif']
+          },
+          colors: {
+            trust: {
+              topMaroon: '#540c14',
+              navMaroon: '#641018',
+              deepMaroon: '#40080d',
+              goldText: '#872127',
+              pillPeach: '#e99f4c',
+              pillHover: '#df913c',
+              goldBorder: '#cca352',
+              lightCream: '#fbf5e6',
+              bannerBg: '#fdedd0',
+              bannerCenter: '#fdf6e9',
+              goldAccent: '#d89e34',
+              darkRed: '#73121b'
+            }
+          },
+          keyframes: {
+            floatGentle: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-6px)' }
+            },
+            sunbeam: {
+              '0%': { transform: 'rotate(0deg)' },
+              '100%': { transform: 'rotate(360deg)' }
+            },
+            shimmerGold: {
+              '0%': { backgroundPosition: '-200% 0' },
+              '100%': { backgroundPosition: '200% 0' }
+            }
+          },
+          animation: {
+            floatGentle: 'floatGentle 4s ease-in-out infinite',
+            sunbeam: 'sunbeam 90s linear infinite',
+            shimmerGold: 'shimmerGold 3s linear infinite'
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    /* Normal text size */
+    html body {
+      font-size: 0.975rem;
+      line-height: 1.35rem;
+    }
+
+    /* Global Typography & Aesthetic Rules */
+    body {
+      font-family: 'Hind', sans-serif;
+      background-color: #fcf8ee;
+      color: #281113;
+      overflow-x: hidden;
+    }
+
+    /* Subtle damask & golden filigree background patterns */
+    .fcp-header-bg {
+      background-color: #fffaf0;
+      background-image: 
+        radial-gradient(#e0b768 0.75px, transparent 0.75px), 
+        radial-gradient(#e0b768 0.75px, #fffaf0 0.75px);
+      background-size: 24px 24px;
+      background-position: 0 0, 12px 12px;
+      position: relative;
+    }
+
+    /* Hero stage authentic golden arched vignette */
+    .hero-radiant-bg {
+      background: radial-gradient(circle at 50% 40%, #fffbf2 0%, #faecd2 50%, #f4dcba 100%);
+    }
+
+    /* Golden 3D wave divider from Image 2 */
+    .golden-wave-curve {
+      filter: drop-shadow(0px -4px 8px rgba(184, 134, 11, 0.35));
+    }
+
+    /* Card styling matching Image 2 */
+    .activity-card-border {
+      border: 1.5px solid #d4af37;
+      box-shadow: 0 4px 14px rgba(135, 33, 39, 0.08);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    .activity-card-border:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 24px rgba(115, 18, 27, 0.18);
+      border-color: #b8860b;
+    }
+
+    /* Floating canvas for soft golden sparks */
+    #hero-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 10;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #fdf5e6;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #872127;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #540c14;
+    }
+  </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Hind, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.pointer-events-none{pointer-events:none}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-inset-3{inset:-0.75rem}.-inset-4{inset:-1rem}.inset-0{inset:0px}.-bottom-10{bottom:-2.5rem}.-right-10{right:-2.5rem}.-right-8{right:-2rem}.bottom-2{bottom:0.5rem}.bottom-3{bottom:0.75rem}.left-2{left:0.5rem}.left-3{left:0.75rem}.left-3\.5{left:0.875rem}.top-0{top:0px}.top-2\.5{top:0.625rem}.bottom-20{bottom:5rem}.left-1\/2{left:50%}.right-3{right:0.75rem}.top-3{top:0.75rem}.z-10{z-index:10}.z-20{z-index:20}.z-30{z-index:30}.z-40{z-index:40}.z-50{z-index:50}.order-1{order:1}.order-2{order:2}.order-3{order:3}.col-span-1{grid-column:span 1 / span 1}.mx-auto{margin-left:auto;margin-right:auto}.my-1{margin-top:0.25rem;margin-bottom:0.25rem}.my-2{margin-top:0.5rem;margin-bottom:0.5rem}.my-3{margin-top:0.75rem;margin-bottom:0.75rem}.my-4{margin-top:1rem;margin-bottom:1rem}.my-6{margin-top:1.5rem;margin-bottom:1.5rem}.mb-1{margin-bottom:0.25rem}.mb-10{margin-bottom:2.5rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-8{margin-bottom:2rem}.ml-0\.5{margin-left:0.125rem}.ml-1{margin-left:0.25rem}.ml-2{margin-left:0.5rem}.mr-1{margin-right:0.25rem}.mr-2{margin-right:0.5rem}.mt-0\.5{margin-top:0.125rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-2\.5{margin-top:0.625rem}.mt-3{margin-top:0.75rem}.mt-4{margin-top:1rem}.mt-5{margin-top:1.25rem}.mt-6{margin-top:1.5rem}.mb-0\.5{margin-bottom:0.125rem}.mr-1\.5{margin-right:0.375rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-0\.5{height:0.125rem}.h-1\.5{height:0.375rem}.h-10{height:2.5rem}.h-11{height:2.75rem}.h-12{height:3rem}.h-16{height:4rem}.h-2{height:0.5rem}.h-20{height:5rem}.h-24{height:6rem}.h-28{height:7rem}.h-3{height:0.75rem}.h-4{height:1rem}.h-40{height:10rem}.h-48{height:12rem}.h-5{height:1.25rem}.h-52{height:13rem}.h-56{height:14rem}.h-6{height:1.5rem}.h-64{height:16rem}.h-72{height:18rem}.h-8{height:2rem}.h-80{height:20rem}.h-\[850px\]{height:850px}.h-full{height:100%}.h-36{height:9rem}.max-h-\[80vh\]{max-height:80vh}.min-h-\[220px\]{min-height:220px}.w-1\.5{width:0.375rem}.w-10{width:2.5rem}.w-11{width:2.75rem}.w-12{width:3rem}.w-16{width:4rem}.w-2{width:0.5rem}.w-20{width:5rem}.w-24{width:6rem}.w-32{width:8rem}.w-36{width:9rem}.w-40{width:10rem}.w-48{width:12rem}.w-6{width:1.5rem}.w-64{width:16rem}.w-72{width:18rem}.w-\[850px\]{width:850px}.w-full{width:100%}.w-44{width:11rem}.w-8{width:2rem}.min-w-\[65px\]{min-width:65px}.max-w-2xl{max-width:42rem}.max-w-4xl{max-width:56rem}.max-w-5xl{max-width:64rem}.max-w-6xl{max-width:72rem}.max-w-7xl{max-width:80rem}.max-w-md{max-width:28rem}.max-w-lg{max-width:32rem}.max-w-xl{max-width:36rem}.flex-1{flex:1 1 0%}.shrink-0{flex-shrink:0}.-translate-x-1\/2{--tw-translate-x:-50%;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes ping{75%, 100%{transform:scale(2);opacity:0}}.animate-ping{animation:ping 1s cubic-bezier(0, 0, 0.2, 1) infinite}@keyframes pulse{50%{opacity:.5}}.animate-pulse{animation:pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite}@keyframes sunbeam{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.animate-sunbeam{animation:sunbeam 90s linear infinite}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.cursor-pointer{cursor:pointer}.select-none{-webkit-user-select:none;user-select:none}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.gap-2\.5{gap:0.625rem}.gap-3{gap:0.75rem}.gap-3\.5{gap:0.875rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-1 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.25rem * var(--tw-space-x-reverse));margin-left:calc(0.25rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.625rem * var(--tw-space-x-reverse));margin-left:calc(0.625rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-1\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.375rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.375rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-3\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.875rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.875rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.space-y-6 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.5rem * var(--tw-space-y-reverse))}.space-y-8 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(2rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(2rem * var(--tw-space-y-reverse))}.space-y-2\.5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.625rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.625rem * var(--tw-space-y-reverse))}.space-y-5 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1.25rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1.25rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.scroll-smooth{scroll-behavior:smooth}.rounded{border-radius:0.25rem}.rounded-2xl{border-radius:1rem}.rounded-3xl{border-radius:1.5rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-b-xl{border-bottom-right-radius:0.75rem;border-bottom-left-radius:0.75rem}.rounded-t-full{border-top-left-radius:9999px;border-top-right-radius:9999px}.rounded-b-2xl{border-bottom-right-radius:1rem;border-bottom-left-radius:1rem}.border{border-width:1px}.border-2{border-width:2px}.border-4{border-width:4px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-b-2{border-bottom-width:2px}.border-b-4{border-bottom-width:4px}.border-t{border-top-width:1px}.border-t-2{border-top-width:2px}.border-t-4{border-top-width:4px}.border-amber-200{--tw-border-opacity:1;border-color:rgb(253 230 138 / var(--tw-border-opacity, 1))}.border-amber-300{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.border-amber-300\/30{border-color:rgb(252 211 77 / 0.3)}.border-amber-300\/40{border-color:rgb(252 211 77 / 0.4)}.border-amber-300\/60{border-color:rgb(252 211 77 / 0.6)}.border-amber-300\/80{border-color:rgb(252 211 77 / 0.8)}.border-amber-400{--tw-border-opacity:1;border-color:rgb(251 191 36 / var(--tw-border-opacity, 1))}.border-amber-400\/30{border-color:rgb(251 191 36 / 0.3)}.border-amber-400\/40{border-color:rgb(251 191 36 / 0.4)}.border-amber-400\/50{border-color:rgb(251 191 36 / 0.5)}.border-amber-400\/60{border-color:rgb(251 191 36 / 0.6)}.border-amber-500{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.border-amber-500\/30{border-color:rgb(245 158 11 / 0.3)}.border-amber-500\/40{border-color:rgb(245 158 11 / 0.4)}.border-amber-600\/30{border-color:rgb(217 119 6 / 0.3)}.border-amber-600\/40{border-color:rgb(217 119 6 / 0.4)}.border-blue-500\/40{border-color:rgb(59 130 246 / 0.4)}.border-neutral-300{--tw-border-opacity:1;border-color:rgb(212 212 212 / var(--tw-border-opacity, 1))}.border-rose-500\/40{border-color:rgb(244 63 94 / 0.4)}.border-white\/20{border-color:rgb(255 255 255 / 0.2)}.border-white\/60{border-color:rgb(255 255 255 / 0.6)}.border-amber-700\/50{border-color:rgb(180 83 9 / 0.5)}.bg-\[\#1877F2\]{--tw-bg-opacity:1;background-color:rgb(24 119 242 / var(--tw-bg-opacity, 1))}.bg-\[\#500724\]{--tw-bg-opacity:1;background-color:rgb(80 7 36 / var(--tw-bg-opacity, 1))}.bg-\[\#fbf5e8\]{--tw-bg-opacity:1;background-color:rgb(251 245 232 / var(--tw-bg-opacity, 1))}.bg-\[\#fbf6ec\]{--tw-bg-opacity:1;background-color:rgb(251 246 236 / var(--tw-bg-opacity, 1))}.bg-\[\#fcf7ee\]{--tw-bg-opacity:1;background-color:rgb(252 247 238 / var(--tw-bg-opacity, 1))}.bg-\[\#fcf8ee\]{--tw-bg-opacity:1;background-color:rgb(252 248 238 / var(--tw-bg-opacity, 1))}.bg-\[\#fdfaf3\]{--tw-bg-opacity:1;background-color:rgb(253 250 243 / var(--tw-bg-opacity, 1))}.bg-\[\#fffbf2\]{--tw-bg-opacity:1;background-color:rgb(255 251 242 / var(--tw-bg-opacity, 1))}.bg-\[\#fffdfa\]{--tw-bg-opacity:1;background-color:rgb(255 253 250 / var(--tw-bg-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-amber-100\/90{background-color:rgb(254 243 199 / 0.9)}.bg-amber-200{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.bg-amber-400{--tw-bg-opacity:1;background-color:rgb(251 191 36 / var(--tw-bg-opacity, 1))}.bg-amber-400\/20{background-color:rgb(251 191 36 / 0.2)}.bg-amber-50{--tw-bg-opacity:1;background-color:rgb(255 251 235 / var(--tw-bg-opacity, 1))}.bg-amber-50\/50{background-color:rgb(255 251 235 / 0.5)}.bg-amber-50\/60{background-color:rgb(255 251 235 / 0.6)}.bg-amber-50\/70{background-color:rgb(255 251 235 / 0.7)}.bg-amber-50\/80{background-color:rgb(255 251 235 / 0.8)}.bg-amber-500{--tw-bg-opacity:1;background-color:rgb(245 158 11 / var(--tw-bg-opacity, 1))}.bg-amber-900{--tw-bg-opacity:1;background-color:rgb(120 53 15 / var(--tw-bg-opacity, 1))}.bg-black\/25{background-color:rgb(0 0 0 / 0.25)}.bg-black\/30{background-color:rgb(0 0 0 / 0.3)}.bg-black\/35{background-color:rgb(0 0 0 / 0.35)}.bg-black\/40{background-color:rgb(0 0 0 / 0.4)}.bg-black\/50{background-color:rgb(0 0 0 / 0.5)}.bg-black\/60{background-color:rgb(0 0 0 / 0.6)}.bg-black\/65{background-color:rgb(0 0 0 / 0.65)}.bg-black\/70{background-color:rgb(0 0 0 / 0.7)}.bg-blue-100{--tw-bg-opacity:1;background-color:rgb(219 234 254 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-neutral-900{--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.bg-orange-100{--tw-bg-opacity:1;background-color:rgb(255 237 213 / var(--tw-bg-opacity, 1))}.bg-purple-100{--tw-bg-opacity:1;background-color:rgb(243 232 255 / var(--tw-bg-opacity, 1))}.bg-red-500{--tw-bg-opacity:1;background-color:rgb(239 68 68 / var(--tw-bg-opacity, 1))}.bg-red-600{--tw-bg-opacity:1;background-color:rgb(220 38 38 / var(--tw-bg-opacity, 1))}.bg-rose-100{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.bg-trust-darkRed{--tw-bg-opacity:1;background-color:rgb(115 18 27 / var(--tw-bg-opacity, 1))}.bg-trust-deepMaroon{--tw-bg-opacity:1;background-color:rgb(64 8 13 / var(--tw-bg-opacity, 1))}.bg-trust-navMaroon{--tw-bg-opacity:1;background-color:rgb(100 16 24 / var(--tw-bg-opacity, 1))}.bg-trust-pillPeach{--tw-bg-opacity:1;background-color:rgb(233 159 76 / var(--tw-bg-opacity, 1))}.bg-trust-topMaroon{--tw-bg-opacity:1;background-color:rgb(84 12 20 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-white\/10{background-color:rgb(255 255 255 / 0.1)}.bg-white\/20{background-color:rgb(255 255 255 / 0.2)}.bg-white\/95{background-color:rgb(255 255 255 / 0.95)}.bg-amber-100\/60{background-color:rgb(254 243 199 / 0.6)}.bg-black{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.bg-black\/80{background-color:rgb(0 0 0 / 0.8)}.bg-black\/85{background-color:rgb(0 0 0 / 0.85)}.bg-black\/90{background-color:rgb(0 0 0 / 0.9)}.bg-neutral-100{--tw-bg-opacity:1;background-color:rgb(245 245 245 / var(--tw-bg-opacity, 1))}.bg-neutral-200{--tw-bg-opacity:1;background-color:rgb(229 229 229 / var(--tw-bg-opacity, 1))}.bg-neutral-50{--tw-bg-opacity:1;background-color:rgb(250 250 250 / var(--tw-bg-opacity, 1))}.bg-neutral-800{--tw-bg-opacity:1;background-color:rgb(38 38 38 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-l{background-image:linear-gradient(to left, var(--tw-gradient-stops))}.bg-gradient-to-r{background-image:linear-gradient(to right, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-\[\#3a060d\]{--tw-gradient-from:#3a060d var(--tw-gradient-from-position);--tw-gradient-to:rgb(58 6 13 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#3b0b11\]{--tw-gradient-from:#3b0b11 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 11 17 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#40080d\]{--tw-gradient-from:#40080d var(--tw-gradient-from-position);--tw-gradient-to:rgb(64 8 13 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#480c14\]{--tw-gradient-from:#480c14 var(--tw-gradient-from-position);--tw-gradient-to:rgb(72 12 20 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#4a0912\]{--tw-gradient-from:#4a0912 var(--tw-gradient-from-position);--tw-gradient-to:rgb(74 9 18 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#7a121d\]{--tw-gradient-from:#7a121d var(--tw-gradient-from-position);--tw-gradient-to:rgb(122 18 29 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#7f1d1d\]{--tw-gradient-from:#7f1d1d var(--tw-gradient-from-position);--tw-gradient-to:rgb(127 29 29 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#991b1b\]{--tw-gradient-from:#991b1b var(--tw-gradient-from-position);--tw-gradient-to:rgb(153 27 27 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#b91c1c\]{--tw-gradient-from:#b91c1c var(--tw-gradient-from-position);--tw-gradient-to:rgb(185 28 28 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#f09433\]{--tw-gradient-from:#f09433 var(--tw-gradient-from-position);--tw-gradient-to:rgb(240 148 51 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#fbf4e6\]{--tw-gradient-from:#fbf4e6 var(--tw-gradient-from-position);--tw-gradient-to:rgb(251 244 230 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#fdf6e7\]{--tw-gradient-from:#fdf6e7 var(--tw-gradient-from-position);--tw-gradient-to:rgb(253 246 231 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#fdfaf3\]{--tw-gradient-from:#fdfaf3 var(--tw-gradient-from-position);--tw-gradient-to:rgb(253 250 243 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-amber-300{--tw-gradient-from:#fcd34d var(--tw-gradient-from-position);--tw-gradient-to:rgb(252 211 77 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-amber-400{--tw-gradient-from:#fbbf24 var(--tw-gradient-from-position);--tw-gradient-to:rgb(251 191 36 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-amber-500{--tw-gradient-from:#f59e0b var(--tw-gradient-from-position);--tw-gradient-to:rgb(245 158 11 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-amber-600{--tw-gradient-from:#d97706 var(--tw-gradient-from-position);--tw-gradient-to:rgb(217 119 6 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-amber-700{--tw-gradient-from:#b45309 var(--tw-gradient-from-position);--tw-gradient-to:rgb(180 83 9 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-amber-800{--tw-gradient-from:#92400e var(--tw-gradient-from-position);--tw-gradient-to:rgb(146 64 14 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-black{--tw-gradient-from:#000 var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-900{--tw-gradient-from:#1e3a8a var(--tw-gradient-from-position);--tw-gradient-to:rgb(30 58 138 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-blue-950{--tw-gradient-from:#172554 var(--tw-gradient-from-position);--tw-gradient-to:rgb(23 37 84 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-emerald-800{--tw-gradient-from:#065f46 var(--tw-gradient-from-position);--tw-gradient-to:rgb(6 95 70 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-orange-800{--tw-gradient-from:#9a3412 var(--tw-gradient-from-position);--tw-gradient-to:rgb(154 52 18 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-purple-950{--tw-gradient-from:#3b0764 var(--tw-gradient-from-position);--tw-gradient-to:rgb(59 7 100 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-rose-800{--tw-gradient-from:#9f1239 var(--tw-gradient-from-position);--tw-gradient-to:rgb(159 18 57 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-transparent{--tw-gradient-from:transparent var(--tw-gradient-from-position);--tw-gradient-to:rgb(0 0 0 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-trust-deepMaroon{--tw-gradient-from:#40080d var(--tw-gradient-from-position);--tw-gradient-to:rgb(64 8 13 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#2b070d\]{--tw-gradient-from:#2b070d var(--tw-gradient-from-position);--tw-gradient-to:rgb(43 7 13 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#38070d\]{--tw-gradient-from:#38070d var(--tw-gradient-from-position);--tw-gradient-to:rgb(56 7 13 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-\[\#520911\]{--tw-gradient-to:rgb(82 9 17 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #520911 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#540d16\]{--tw-gradient-to:rgb(84 13 22 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #540d16 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#590e18\]{--tw-gradient-to:rgb(89 14 24 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #590e18 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#5b1118\]{--tw-gradient-to:rgb(91 17 24 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #5b1118 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#641018\]{--tw-gradient-to:rgb(100 16 24 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #641018 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#6a121e\]{--tw-gradient-to:rgb(106 18 30 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #6a121e var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#6d131f\]{--tw-gradient-to:rgb(109 19 31 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #6d131f var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#78181b\]{--tw-gradient-to:rgb(120 24 27 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #78181b var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#dc2743\]{--tw-gradient-to:rgb(220 39 67 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #dc2743 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#fffbf2\]{--tw-gradient-to:rgb(255 251 242 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fffbf2 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-amber-400{--tw-gradient-to:rgb(251 191 36 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fbbf24 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-amber-700{--tw-gradient-to:rgb(180 83 9 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #b45309 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-indigo-800{--tw-gradient-to:rgb(55 48 163 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #3730a3 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-neutral-900{--tw-gradient-to:rgb(23 23 23 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #171717 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-orange-300{--tw-gradient-to:rgb(253 186 116 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fdba74 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-orange-400{--tw-gradient-to:rgb(251 146 60 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fb923c var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-orange-500{--tw-gradient-to:rgb(249 115 22 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #f97316 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-orange-600{--tw-gradient-to:rgb(234 88 12 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #ea580c var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-orange-700{--tw-gradient-to:rgb(194 65 12 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #c2410c var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-pink-700{--tw-gradient-to:rgb(190 24 93 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #be185d var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-rose-300{--tw-gradient-to:rgb(253 164 175 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #fda4af var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-slate-900{--tw-gradient-to:rgb(15 23 42 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f172a var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-teal-700{--tw-gradient-to:rgb(15 118 110 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f766e var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-trust-navMaroon{--tw-gradient-to:rgb(100 16 24 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #641018 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-yellow-600{--tw-gradient-to:rgb(202 138 4 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #ca8a04 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-\[\#560e18\]{--tw-gradient-to:rgb(86 14 24 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #560e18 var(--tw-gradient-via-position), var(--tw-gradient-to)}.via-amber-500{--tw-gradient-to:rgb(245 158 11 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #f59e0b var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#1c0205\]{--tw-gradient-to:#1c0205 var(--tw-gradient-to-position)}.to-\[\#1f0206\]{--tw-gradient-to:#1f0206 var(--tw-gradient-to-position)}.to-\[\#200407\]{--tw-gradient-to:#200407 var(--tw-gradient-to-position)}.to-\[\#250307\]{--tw-gradient-to:#250307 var(--tw-gradient-to-position)}.to-\[\#250308\]{--tw-gradient-to:#250308 var(--tw-gradient-to-position)}.to-\[\#260205\]{--tw-gradient-to:#260205 var(--tw-gradient-to-position)}.to-\[\#2a0408\]{--tw-gradient-to:#2a0408 var(--tw-gradient-to-position)}.to-\[\#2c050a\]{--tw-gradient-to:#2c050a var(--tw-gradient-to-position)}.to-\[\#450a0a\]{--tw-gradient-to:#450a0a var(--tw-gradient-to-position)}.to-\[\#bc1888\]{--tw-gradient-to:#bc1888 var(--tw-gradient-to-position)}.to-\[\#fbf4e4\]{--tw-gradient-to:#fbf4e4 var(--tw-gradient-to-position)}.to-\[\#fffbf2\]{--tw-gradient-to:#fffbf2 var(--tw-gradient-to-position)}.to-amber-300{--tw-gradient-to:#fcd34d var(--tw-gradient-to-position)}.to-amber-400{--tw-gradient-to:#fbbf24 var(--tw-gradient-to-position)}.to-amber-500{--tw-gradient-to:#f59e0b var(--tw-gradient-to-position)}.to-amber-600{--tw-gradient-to:#d97706 var(--tw-gradient-to-position)}.to-amber-700{--tw-gradient-to:#b45309 var(--tw-gradient-to-position)}.to-amber-900{--tw-gradient-to:#78350f var(--tw-gradient-to-position)}.to-amber-950{--tw-gradient-to:#451a03 var(--tw-gradient-to-position)}.to-indigo-950{--tw-gradient-to:#1e1b4b var(--tw-gradient-to-position)}.to-orange-600{--tw-gradient-to:#ea580c var(--tw-gradient-to-position)}.to-rose-950{--tw-gradient-to:#4c0519 var(--tw-gradient-to-position)}.to-transparent{--tw-gradient-to:transparent var(--tw-gradient-to-position)}.to-trust-deepMaroon{--tw-gradient-to:#40080d var(--tw-gradient-to-position)}.to-trust-navMaroon{--tw-gradient-to:#641018 var(--tw-gradient-to-position)}.to-trust-topMaroon{--tw-gradient-to:#540c14 var(--tw-gradient-to-position)}.to-yellow-200{--tw-gradient-to:#fef08a var(--tw-gradient-to-position)}.to-yellow-400{--tw-gradient-to:#facc15 var(--tw-gradient-to-position)}.to-yellow-600{--tw-gradient-to:#ca8a04 var(--tw-gradient-to-position)}.to-\[\#120204\]{--tw-gradient-to:#120204 var(--tw-gradient-to-position)}.to-\[\#1d0306\]{--tw-gradient-to:#1d0306 var(--tw-gradient-to-position)}.object-contain{object-fit:contain}.object-cover{object-fit:cover}.p-1{padding:0.25rem}.p-2{padding:0.5rem}.p-2\.5{padding:0.625rem}.p-3{padding:0.75rem}.p-3\.5{padding:0.875rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.p-6{padding:1.5rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-2\.5{padding-left:0.625rem;padding-right:0.625rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-3\.5{padding-left:0.875rem;padding-right:0.875rem}.px-4{padding-left:1rem;padding-right:1rem}.px-5{padding-left:1.25rem;padding-right:1.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-14{padding-top:3.5rem;padding-bottom:3.5rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-3\.5{padding-top:0.875rem;padding-bottom:0.875rem}.py-8{padding-top:2rem;padding-bottom:2rem}.py-10{padding-top:2.5rem;padding-bottom:2.5rem}.pb-10{padding-bottom:2.5rem}.pb-2{padding-bottom:0.5rem}.pb-4{padding-bottom:1rem}.pl-6{padding-left:1.5rem}.pl-8{padding-left:2rem}.pr-4{padding-right:1rem}.pt-2{padding-top:0.5rem}.pt-3{padding-top:0.75rem}.pt-4{padding-top:1rem}.pt-6{padding-top:1.5rem}.pb-1{padding-bottom:0.25rem}.pb-8{padding-bottom:2rem}.pt-1{padding-top:0.25rem}.text-left{text-align:left}.text-center{text-align:center}.text-right{text-align:right}.font-mono{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace}.font-sans{font-family:Hind, sans-serif}.font-serif{font-family:Marcellus, Hind, serif}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-6xl{font-size:3.75rem;line-height:1}.text-9xl{font-size:8rem;line-height:1}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[9px\]{font-size:9px}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-black{font-weight:900}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-normal{font-weight:400}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.italic{font-style:italic}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-snug{line-height:1.375}.leading-tight{line-height:1.25}.leading-normal{line-height:1.5}.tracking-normal{letter-spacing:0em}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-widest{letter-spacing:0.1em}.text-\[\#e5b342\]{--tw-text-opacity:1;color:rgb(229 179 66 / var(--tw-text-opacity, 1))}.text-amber-100{--tw-text-opacity:1;color:rgb(254 243 199 / var(--tw-text-opacity, 1))}.text-amber-100\/70{color:rgb(254 243 199 / 0.7)}.text-amber-100\/80{color:rgb(254 243 199 / 0.8)}.text-amber-100\/90{color:rgb(254 243 199 / 0.9)}.text-amber-200{--tw-text-opacity:1;color:rgb(253 230 138 / var(--tw-text-opacity, 1))}.text-amber-200\/70{color:rgb(253 230 138 / 0.7)}.text-amber-200\/80{color:rgb(253 230 138 / 0.8)}.text-amber-200\/90{color:rgb(253 230 138 / 0.9)}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-amber-400\/10{color:rgb(251 191 36 / 0.1)}.text-amber-400\/40{color:rgb(251 191 36 / 0.4)}.text-amber-50{--tw-text-opacity:1;color:rgb(255 251 235 / var(--tw-text-opacity, 1))}.text-amber-600{--tw-text-opacity:1;color:rgb(217 119 6 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-amber-700\/80{color:rgb(180 83 9 / 0.8)}.text-amber-800{--tw-text-opacity:1;color:rgb(146 64 14 / var(--tw-text-opacity, 1))}.text-amber-900{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.text-amber-950{--tw-text-opacity:1;color:rgb(69 26 3 / var(--tw-text-opacity, 1))}.text-blue-200\/80{color:rgb(191 219 254 / 0.8)}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-blue-700{--tw-text-opacity:1;color:rgb(29 78 216 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-emerald-800{--tw-text-opacity:1;color:rgb(6 95 70 / var(--tw-text-opacity, 1))}.text-neutral-400{--tw-text-opacity:1;color:rgb(163 163 163 / var(--tw-text-opacity, 1))}.text-neutral-500{--tw-text-opacity:1;color:rgb(115 115 115 / var(--tw-text-opacity, 1))}.text-neutral-600{--tw-text-opacity:1;color:rgb(82 82 82 / var(--tw-text-opacity, 1))}.text-neutral-700{--tw-text-opacity:1;color:rgb(64 64 64 / var(--tw-text-opacity, 1))}.text-neutral-800{--tw-text-opacity:1;color:rgb(38 38 38 / var(--tw-text-opacity, 1))}.text-neutral-900{--tw-text-opacity:1;color:rgb(23 23 23 / var(--tw-text-opacity, 1))}.text-orange-700{--tw-text-opacity:1;color:rgb(194 65 12 / var(--tw-text-opacity, 1))}.text-orange-800{--tw-text-opacity:1;color:rgb(154 52 18 / var(--tw-text-opacity, 1))}.text-purple-700{--tw-text-opacity:1;color:rgb(126 34 206 / var(--tw-text-opacity, 1))}.text-red-700{--tw-text-opacity:1;color:rgb(185 28 28 / var(--tw-text-opacity, 1))}.text-red-800{--tw-text-opacity:1;color:rgb(153 27 27 / var(--tw-text-opacity, 1))}.text-red-900{--tw-text-opacity:1;color:rgb(127 29 29 / var(--tw-text-opacity, 1))}.text-rose-200{--tw-text-opacity:1;color:rgb(254 205 211 / var(--tw-text-opacity, 1))}.text-rose-200\/80{color:rgb(254 205 211 / 0.8)}.text-rose-400{--tw-text-opacity:1;color:rgb(251 113 133 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-rose-800{--tw-text-opacity:1;color:rgb(159 18 57 / var(--tw-text-opacity, 1))}.text-trust-deepMaroon{--tw-text-opacity:1;color:rgb(64 8 13 / var(--tw-text-opacity, 1))}.text-trust-goldText{--tw-text-opacity:1;color:rgb(135 33 39 / var(--tw-text-opacity, 1))}.text-trust-topMaroon{--tw-text-opacity:1;color:rgb(84 12 20 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-200\/60{color:rgb(253 230 138 / 0.6)}.text-blue-800{--tw-text-opacity:1;color:rgb(30 64 175 / var(--tw-text-opacity, 1))}.text-emerald-600{--tw-text-opacity:1;color:rgb(5 150 105 / var(--tw-text-opacity, 1))}.text-neutral-300{--tw-text-opacity:1;color:rgb(212 212 212 / var(--tw-text-opacity, 1))}.text-red-950{--tw-text-opacity:1;color:rgb(69 10 10 / var(--tw-text-opacity, 1))}.accent-amber-400{accent-color:#fbbf24}.opacity-0{opacity:0}.opacity-25{opacity:0.25}.opacity-50{opacity:0.5}.opacity-60{opacity:0.6}.opacity-70{opacity:0.7}.opacity-90{opacity:0.9}.shadow{--tw-shadow:0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-inner{--tw-shadow:inset 0 2px 4px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:inset 0 2px 4px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.blur-2xl{--tw-blur:blur(40px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-lg{--tw-blur:blur(16px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.blur-md{--tw-blur:blur(12px);filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow{--tw-drop-shadow:drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-md{--tw-drop-shadow:drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.drop-shadow-sm{--tw-drop-shadow:drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.filter{filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.backdrop-blur-sm{--tw-backdrop-blur:blur(4px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition{transition-property:color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-300{transition-duration:300ms}.duration-500{transition-duration:500ms}.duration-700{transition-duration:700ms}.duration-200{transition-duration:200ms}.selection\:bg-amber-200 *::selection{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.selection\:text-red-950 *::selection{--tw-text-opacity:1;color:rgb(69 10 10 / var(--tw-text-opacity, 1))}.selection\:bg-amber-200::selection{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.selection\:text-red-950::selection{--tw-text-opacity:1;color:rgb(69 10 10 / var(--tw-text-opacity, 1))}.before\:absolute::before{content:var(--tw-content);position:absolute}.before\:bottom-4::before{content:var(--tw-content);bottom:1rem}.before\:left-3::before{content:var(--tw-content);left:0.75rem}.before\:top-4::before{content:var(--tw-content);top:1rem}.before\:w-0\.5::before{content:var(--tw-content);width:0.125rem}.before\:bg-gradient-to-b::before{content:var(--tw-content);background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.before\:from-amber-400::before{content:var(--tw-content);--tw-gradient-from:#fbbf24 var(--tw-gradient-from-position);--tw-gradient-to:rgb(251 191 36 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:rotate-3:hover{--tw-rotate:3deg;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-105:hover{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-\[1\.01\]:hover{--tw-scale-x:1.01;--tw-scale-y:1.01;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:scale-\[1\.02\]:hover{--tw-scale-x:1.02;--tw-scale-y:1.02;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:border-amber-300:hover{--tw-border-opacity:1;border-color:rgb(252 211 77 / var(--tw-border-opacity, 1))}.hover\:border-amber-500:hover{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.hover\:bg-amber-100:hover{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-200:hover{--tw-bg-opacity:1;background-color:rgb(253 230 138 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-300:hover{--tw-bg-opacity:1;background-color:rgb(252 211 77 / var(--tw-bg-opacity, 1))}.hover\:bg-amber-400\/20:hover{background-color:rgb(251 191 36 / 0.2)}.hover\:bg-amber-400\/30:hover{background-color:rgb(251 191 36 / 0.3)}.hover\:bg-black\/60:hover{background-color:rgb(0 0 0 / 0.6)}.hover\:bg-blue-700:hover{--tw-bg-opacity:1;background-color:rgb(29 78 216 / var(--tw-bg-opacity, 1))}.hover\:bg-red-700:hover{--tw-bg-opacity:1;background-color:rgb(185 28 28 / var(--tw-bg-opacity, 1))}.hover\:bg-trust-pillHover:hover{--tw-bg-opacity:1;background-color:rgb(223 145 60 / var(--tw-bg-opacity, 1))}.hover\:bg-trust-topMaroon:hover{--tw-bg-opacity:1;background-color:rgb(84 12 20 / var(--tw-bg-opacity, 1))}.hover\:bg-white:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:bg-white\/20:hover{background-color:rgb(255 255 255 / 0.2)}.hover\:bg-black:hover{--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}.hover\:bg-neutral-900:hover{--tw-bg-opacity:1;background-color:rgb(23 23 23 / var(--tw-bg-opacity, 1))}.hover\:from-amber-200:hover{--tw-gradient-from:#fde68a var(--tw-gradient-from-position);--tw-gradient-to:rgb(253 230 138 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-amber-300:hover{--tw-gradient-from:#fcd34d var(--tw-gradient-from-position);--tw-gradient-to:rgb(252 211 77 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:from-amber-400:hover{--tw-gradient-from:#fbbf24 var(--tw-gradient-from-position);--tw-gradient-to:rgb(251 191 36 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.hover\:to-amber-300:hover{--tw-gradient-to:#fcd34d var(--tw-gradient-to-position)}.hover\:to-amber-400:hover{--tw-gradient-to:#fbbf24 var(--tw-gradient-to-position)}.hover\:to-amber-500:hover{--tw-gradient-to:#f59e0b var(--tw-gradient-to-position)}.hover\:text-amber-200:hover{--tw-text-opacity:1;color:rgb(253 230 138 / var(--tw-text-opacity, 1))}.hover\:text-amber-300:hover{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.hover\:text-amber-900:hover{--tw-text-opacity:1;color:rgb(120 53 15 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:text-amber-700:hover{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.hover\:opacity-100:hover{opacity:1}.hover\:shadow-2xl:hover{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.hover\:shadow-xl:hover{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.focus\:border-amber-500:focus{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.focus\:outline-none:focus{outline:2px solid transparent;outline-offset:2px}.group:hover .group-hover\:scale-105{--tw-scale-x:1.05;--tw-scale-y:1.05;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:scale-110{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.group:hover .group-hover\:border-amber-500{--tw-border-opacity:1;border-color:rgb(245 158 11 / var(--tw-border-opacity, 1))}.group:hover .group-hover\:text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.group:hover .group-hover\:opacity-100{opacity:1}.group:hover .group-hover\:opacity-95{opacity:0.95}@media (min-width: 640px){.sm\:col-span-2{grid-column:span 2 / span 2}.sm\:flex{display:flex}.sm\:h-12{height:3rem}.sm\:h-20{height:5rem}.sm\:h-24{height:6rem}.sm\:h-28{height:7rem}.sm\:h-32{height:8rem}.sm\:h-48{height:12rem}.sm\:h-64{height:16rem}.sm\:h-72{height:18rem}.sm\:h-80{height:20rem}.sm\:h-96{height:24rem}.sm\:w-20{width:5rem}.sm\:w-24{width:6rem}.sm\:w-28{width:7rem}.sm\:w-44{width:11rem}.sm\:w-48{width:12rem}.sm\:w-72{width:18rem}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.sm\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:justify-start{justify-content:flex-start}.sm\:gap-4{gap:1rem}.sm\:gap-5{gap:1.25rem}.sm\:gap-6{gap:1.5rem}.sm\:space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.sm\:p-10{padding:2.5rem}.sm\:p-3{padding:0.75rem}.sm\:p-5{padding:1.25rem}.sm\:p-8{padding:2rem}.sm\:px-5{padding-left:1.25rem;padding-right:1.25rem}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:px-8{padding-left:2rem;padding-right:2rem}.sm\:py-12{padding-top:3rem;padding-bottom:3rem}.sm\:py-16{padding-top:4rem;padding-bottom:4rem}.sm\:py-4{padding-top:1rem;padding-bottom:1rem}.sm\:pb-16{padding-bottom:4rem}.sm\:pl-10{padding-left:2.5rem}.sm\:pt-10{padding-top:2.5rem}.sm\:text-left{text-align:left}.sm\:text-2xl{font-size:1.5rem;line-height:2rem}.sm\:text-3xl{font-size:1.875rem;line-height:2.25rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-base{font-size:1rem;line-height:1.5rem}.sm\:text-lg{font-size:1.125rem;line-height:1.75rem}.sm\:text-sm{font-size:0.875rem;line-height:1.25rem}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}.sm\:before\:left-5::before{content:var(--tw-content);left:1.25rem}}@media (min-width: 768px){.md\:col-span-4{grid-column:span 4 / span 4}.md\:col-span-8{grid-column:span 8 / span 8}.md\:col-span-1{grid-column:span 1 / span 1}.md\:block{display:block}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}.md\:items-end{align-items:flex-end}.md\:text-4xl{font-size:2.25rem;line-height:2.5rem}.md\:text-5xl{font-size:3rem;line-height:1}}@media (min-width: 1024px){.lg\:order-1{order:1}.lg\:order-2{order:2}.lg\:col-span-4{grid-column:span 4 / span 4}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:w-44{width:11rem}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}.lg\:space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}}</style>
+</head>
+<body class="selection:bg-amber-200 selection:text-red-950">
+  <aside aria-label="Top Contact Bar" class="bg-trust-topMaroon text-amber-100 text-xs sm:text-sm py-2 px-3 sm:px-6 relative z-30 border-b border-amber-600/30">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-center sm:justify-between gap-x-4 gap-y-1.5">
+      
+      <!-- Left: Phone & Email with exact icons -->
+      <div class="flex flex-wrap items-center gap-x-4 sm:gap-x-8 gap-y-1 text-amber-50 font-medium">
+        <a href="tel:+919565247444" class="inline-flex items-center gap-2 hover:text-amber-300 transition-colors">
+          <i class="fa-solid fa-phone text-xs text-amber-200"></i>
+          <span class="tracking-wider font-semibold">+91 9565247444</span>
+        </a>
+        <a href="mailto:shyamaju@gmail.com" class="inline-flex items-center gap-2 hover:text-amber-300 transition-colors">
+          <i class="fa-solid fa-envelope text-xs text-amber-200"></i>
+          <span>shyamaju@gmail.com</span>
+        </a>
+      </div>
+
+      <!-- Right: Social Media Icons matching Image 2 (YouTube, Facebook, Instagram) -->
+      <div class="flex items-center gap-2.5">
+        <!-- YouTube Red Button -->
+        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="w-6 h-6 rounded bg-red-600 hover:bg-red-700 flex items-center justify-center text-white transition-transform hover:scale-110 shadow-sm">
+          <i class="fa-brands fa-youtube text-xs"></i>
+        </a>
+        <!-- Facebook Blue Circle/Square -->
+        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook" class="w-6 h-6 rounded bg-[#1877F2] hover:bg-blue-700 flex items-center justify-center text-white transition-transform hover:scale-110 shadow-sm">
+          <i class="fa-brands fa-facebook-f text-xs"></i>
+        </a>
+        <!-- Instagram Gradient Square -->
+        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-6 h-6 rounded bg-gradient-to-tr from-[#f09433] via-[#dc2743] to-[#bc1888] flex items-center justify-center text-white transition-transform hover:scale-110 shadow-sm">
+          <i class="fa-brands fa-instagram text-xs"></i>
+        </a>
+        <!-- Quick Seva Samarpan Button -->
+        <a  class="h-6 inline-flex items-center bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-trust-topMaroon font-bold text-[11px] px-3 rounded shadow transition-all" href="/donate">
+          दान सहयोग
+        </a>
+      </div>
+
+    </div>
+  </aside>
+    <header class="fcp-header-bg border-b border-amber-300/60 shadow-sm relative z-20 py-2 sm:py-3">
+    <div class="max-w-7xl mx-auto px-[5%]">
+
+      <a href="/" aria-label="Shri Shayma Shyam Ju Trust - Home" class="flex items-center gap-3 sm:gap-4">
+
+      <!-- LEFT: Circular Ornate Golden Medallion Seal with Sacred 'ॐ' -->
+      <div class="shrink-0 relative w-14 h-14 sm:w-16 sm:h-16 filter drop-shadow-md transition-transform hover:rotate-3 duration-500">
+        <svg viewBox="0 0 100 100" class="w-full h-full">
+            <!-- Outermost Petal Ring / Sunburst -->
+            <circle cx="50" cy="50" r="48" fill="none" stroke="#d4af37" stroke-width="1.5" stroke-dasharray="2, 2.5"></circle>
+            <!-- Outer Gold Radiance Ring -->
+            <circle cx="50" cy="50" r="44" fill="#ea580c"></circle>
+            <!-- Ornate Beaded Pearl Circle -->
+            <circle cx="50" cy="50" r="40" fill="#fcf7e6" stroke="#b45309" stroke-width="1.5"></circle>
+            <!-- Geometric Triangle Petals -->
+            <g stroke="#ea580c" stroke-width="1.2" opacity="0.8">
+              <polygon points="50,11 53,19 47,19" fill="#f59e0b"></polygon>
+              <polygon points="50,89 53,81 47,81" fill="#f59e0b"></polygon>
+              <polygon points="11,50 19,53 19,47" fill="#f59e0b"></polygon>
+              <polygon points="89,50 81,53 81,47" fill="#f59e0b"></polygon>
+              <polygon points="22,22 30,26 26,30" fill="#f59e0b"></polygon>
+              <polygon points="78,22 70,26 74,30" fill="#f59e0b"></polygon>
+              <polygon points="22,78 30,74 26,70" fill="#f59e0b"></polygon>
+              <polygon points="78,78 70,74 74,70" fill="#f59e0b"></polygon>
+            </g>
+            <!-- Inner Concentric Golden Rings -->
+            <circle cx="50" cy="50" r="32" fill="#fff9eb" stroke="#d4af37" stroke-width="2"></circle>
+            <circle cx="50" cy="50" r="28" fill="#ffffff" stroke="#c2410c" stroke-width="1"></circle>
+            <!-- Authentic Black Sacred Om 'ॐ' exactly as in Image 2 -->
+            <text x="50" y="61" font-family="'Hind', serif" font-weight="700" font-size="33" fill="#1c0709" text-anchor="middle" dominant-baseline="central">ॐ</text>
+          </svg>
+      </div>
+
+      <!-- RIGHT: Compact Trust Title & Subtitle -->
+      <div class="min-w-0">
+        <h1 class="text-xl sm:text-2xl md:text-3xl font-serif font-black tracking-normal text-trust-goldText leading-tight">
+          Shri Shayma Shyam Ju Trust
+        </h1>
+        <p class="text-xs sm:text-sm md:text-base font-medium tracking-wide text-neutral-800 font-sans">
+          Religious &amp; Social Service Organization
+        </p>
+      </div>
+      </a>
+
+    </div>
+  </header>
+  <nav class="sticky top-0 z-40 bg-[#641018] text-amber-50 shadow-md border-y border-amber-600/40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+      <div class="hidden md:flex items-center space-x-1 lg:space-x-3 py-1.5 text-sm font-semibold">
+        <a href="/" class="px-3.5 py-1.5 rounded-full hover:bg-[#540c14] text-amber-100 hover:text-amber-200 transition-colors flex items-center gap-1.5 ">Home</a>
+        <a href="/about" class="px-3.5 py-1.5 rounded-full hover:bg-[#540c14] text-amber-100 hover:text-amber-200 transition-colors flex items-center gap-1.5 bg-[#e99f4c] text-[#40080d] font-bold">About Us</a>
+        <a href="/#activities" class="px-3.5 py-1.5 rounded-full hover:bg-[#540c14] text-amber-100 hover:text-amber-200 transition-colors flex items-center gap-1.5">Our Activities</a>
+        <a href="/quotes" class="px-3.5 py-1.5 rounded-full hover:bg-[#540c14] text-amber-100 hover:text-amber-200 transition-colors flex items-center gap-1.5 ">मानस श्लोक</a>
+        <a href="/donate" class="px-3.5 py-1.5 rounded-full hover:bg-[#540c14] text-amber-100 hover:text-amber-200 transition-colors flex items-center gap-1.5 ">Donation</a>
+        <a href="/contact" class="px-3.5 py-1.5 rounded-full hover:bg-[#540c14] text-amber-100 hover:text-amber-200 transition-colors flex items-center gap-1.5 ">Contact Us</a>
+      </div>
+      <div class="hidden sm:flex items-center space-x-3 py-1.5">
+        <a href="/donate" class="bg-gradient-to-r from-amber-400 to-amber-500 text-[#40080d] font-bold text-xs uppercase px-4 py-1.5 rounded-full shadow flex items-center gap-1.5">
+          <i class="fa-solid fa-hand-holding-heart text-red-800"></i> <span>दान करें</span>
+        </a>
+      </div>
+      <!-- Mobile Menu Bar -->
+      <div class="md:hidden flex items-center justify-between w-full py-2 px-[7%]">
+        <span class="bg-[#e99f4c] text-[#40080d] text-xs font-black px-3 py-1 rounded-full">About Us</span>
+        <button onclick="toggleMobileMenu()" class="text-amber-100 hover:text-white p-1 focus:outline-none" aria-label="Mobile Navigation">
+          <i id="mobile-menu-icon" class="fa-solid fa-bars text-xl"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown Menu -->
+    <div id="mobile-nav-menu" class="hidden md:hidden bg-trust-deepMaroon border-t border-amber-600/40 px-4 py-3 space-y-2 text-sm font-medium">
+      <a href="/" class="block w-full text-left py-1.5 text-amber-100 hover:text-amber-300">Home (मुख्य पृष्ठ)</a>
+      <a href="/about" class="block w-full text-left py-1.5 text-amber-300 font-bold">About Us (संस्था परिचय)</a>
+      <a href="/#activities" class="block w-full text-left py-1.5 text-amber-100 hover:text-amber-300">Our Activities (सेवा प्रकल्प)</a>
+      <a href="/quotes" class="block w-full text-left py-1.5 text-amber-100 hover:text-amber-300">मानस श्लोक (Quotes &amp; Shloks)</a>
+      <a href="/donate" class="block w-full text-left py-1.5 text-amber-100 hover:text-amber-300">Donation (दान एवं सेवा समर्पण)</a>
+      <a href="/#gallery" class="block w-full text-left py-1.5 text-amber-100 hover:text-amber-300">Photo Gallery (चित्र वीथिका)</a>
+      <a href="/contact" class="block w-full text-left py-1.5 text-amber-100 hover:text-amber-300">Contact Us (संपर्क पृष्ठ)</a>
+      <div class="pt-2">
+        <a href="/donate" class="flex items-center justify-center w-full bg-trust-pillPeach text-trust-deepMaroon font-bold py-2 rounded-lg text-center shadow">दान सहयोग / Donate Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="min-h-screen">
+    
+    
+    <!-- SECTION 1: Introduction - Shri Shyama Shyam Ju Trust & Pujya Gurudev -->
+    <section class="py-12 sm:py-16 border-b border-amber-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="bg-white rounded-3xl p-6 sm:p-10 border-2 border-amber-300/80 shadow-xl relative overflow-hidden">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <!-- Left Info & Video Player Box -->
+            <div class="lg:col-span-7 space-y-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full">
+                ABOUT PUJYA MAHANT JI / INTRODUCTION
+              </span>
+              <h2 class="text-3xl sm:text-4xl font-serif font-black text-trust-goldText leading-tight">
+                Introduction –<br>Shri Shyama Shyam Ju Trust
+              </h2>
+              <p class="text-xs sm:text-sm text-neutral-700 leading-relaxed font-normal">
+                श्री श्यामा श्याम जू ट्रस्ट सनातन धर्म के सर्वोच्च मानवीय एवं आध्यात्मिक मूल्यों—भक्ति, करुणा, गौ सेवा, और जन-कल्याण—को समर्पित एक पावन संस्था है। परम पूज्य महंत श्री आलोक दास जी महाराज के पावन सानिध्य में यह ट्रस्ट चित्रकूट धाम, अयोध्या एवं गोण्डा से लेकर सम्पूर्ण राष्ट्र में अविरल गौ संवर्धन, नित्य अन्नपूर्णा भण्डारा एवं श्री राम कथा ज्ञानयज्ञ का संपादन कर रहा है।
+              </p>
+
+              <!-- Video Box with Play Button Overlay (from Screenshot) -->
+              <div class="relative w-full h-52 sm:h-64 rounded-2xl bg-neutral-900 border-2 border-amber-400 overflow-hidden shadow-lg group cursor-pointer" onclick="openAboutVideo()">
+                <!-- Background Preview Image / Thumbnail -->
+                <div class="absolute inset-0 bg-gradient-to-tr from-black via-neutral-900 to-amber-950 flex items-center justify-center">
+                  <div class="text-center p-4">
+                    <i class="fa-solid fa-om text-5xl text-amber-400/40 mb-2"></i>
+                    <p class="text-xs text-amber-200 font-bold">ट्रस्ट वृत्तचित्र एवं पूज्य महाराज जी का पावन संदेश</p>
+                    <p class="text-[10px] text-neutral-400">Shri Shyama Shyam Ju Trust Documentary</p>
+                  </div>
+                </div>
+
+                <!-- Center Play Button (Matching Screenshot) -->
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md border border-white/60 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div class="w-12 h-12 rounded-full bg-amber-400 text-trust-deepMaroon flex items-center justify-center text-xl shadow-lg">
+                      <i class="fa-solid fa-play ml-1"></i>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="absolute bottom-3 left-3 bg-black/70 text-amber-200 text-[10px] px-2.5 py-1 rounded-full border border-amber-400/30">
+                  <i class="fa-solid fa-video mr-1"></i> 10:24 HD Documentary
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Maharaj Ji Devotional Portrait & Floating Stat Pill -->
+            <div class="lg:col-span-5 flex flex-col items-center relative">
+              
+              <!-- Radiant Halo Backdrop -->
+              <div class="absolute -inset-4 bg-gradient-to-r from-amber-300 via-orange-300 to-yellow-200 rounded-full blur-2xl opacity-50"></div>
+
+              <!-- Maharaj Ji Full Portrait Frame -->
+              <div class="relative w-full h-80 sm:w-72 sm:h-96 rounded-3xl border-4 border-amber-400 shadow-2xl overflow-hidden bg-gradient-to-b from-[#7a121d] via-[#520911] to-[#260205] flex items-center justify-center">
+                <img src="alokdasji.jpeg" alt="परम पूज्य महंत श्री आलोक दास जी महाराज" class="w-full h-full object-cover">
+                <!-- Very subtle bottom gradient for contrast -->
+                <div class="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-trust-deepMaroon/30 to-transparent pointer-events-none"></div>
+
+                <div class="absolute bottom-2 text-center w-full px-2">
+                  <span class="inline-block bg-amber-400 text-trust-deepMaroon font-black text-[10px] px-3 py-0.5 rounded-full shadow">
+                    पूज्य महंत श्री आलोक दास जी
+                  </span>
+                </div>
+              </div>
+
+              <!-- Stat Badge Overlay (from Screenshot: "20+ Years / 500+ Gauvansh") -->
+              <div class="mt-4 bg-white/95 border-2 border-amber-400 rounded-2xl px-5 py-3 shadow-xl flex items-center gap-4 text-left">
+                <div class="w-12 h-12 rounded-xl bg-trust-deepMaroon text-amber-300 flex items-center justify-center text-2xl font-bold">
+                  ॐ
+                </div>
+                <div>
+                  <span class="text-2xl font-black text-trust-goldText font-serif">20+</span>
+                  <p class="text-xs text-neutral-600 font-semibold leading-tight">वर्षों का अविरल सेवा, तप एवं धर्म रक्षा संकल्प</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 2: A Journey Through 200 Years of Devotion (Timeline from Screenshot) -->
+    <section class="py-14 bg-gradient-to-b from-[#fdfaf3] to-[#fbf4e4] border-b border-amber-200">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-200 px-3 py-1 rounded-full">
+            SACRED LINEAGE &amp; HERITAGE
+          </span>
+          <h3 class="text-2xl sm:text-3xl md:text-4xl font-serif font-black text-trust-goldText mt-2">
+            A Journey Through Devotion &amp; Seva
+          </h3>
+          <p class="text-xs sm:text-sm text-neutral-600 mt-1">
+            सनातन संत परंपरा, चित्रकूट बालाजी सानिध्य एवं राष्ट्रव्यापी सेवा प्रकल्पों का पावन विकास क्रम
+          </p>
+        </div>
+
+        <!-- Vertical Timeline matching Screenshot -->
+        <div class="relative pl-6 sm:pl-10 space-y-8 before:absolute before:left-3 sm:before:left-5 before:top-4 before:bottom-4 before:w-0.5 before:bg-gradient-to-b before:from-amber-400 via-orange-500 to-amber-700">
+          
+          <!-- Timeline Item 1 -->
+          <div class="relative flex items-start gap-4 sm:gap-6 group">
+            <div class="shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-amber-400 bg-trust-deepMaroon text-amber-200 flex items-center justify-center shadow-lg overflow-hidden relative">
+              <svg viewBox="0 0 100 100" class="w-full h-full">
+                <circle cx="50" cy="50" r="50" fill="#540c14"></circle>
+                <polygon points="50,15 60,35 40,35" fill="#f59e0b"></polygon>
+                <circle cx="50" cy="55" r="22" fill="#d97706"></circle>
+                <circle cx="50" cy="50" r="14" fill="#fef3c7"></circle>
+                <text x="50" y="55" font-family="'Hind', sans-serif" font-weight="700" font-size="14" fill="#78350f" text-anchor="middle">दीक्षा</text>
+              </svg>
+            </div>
+            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-amber-300 shadow-sm flex-1 group-hover:border-amber-500 transition-all">
+              <span class="text-[11px] font-bold text-amber-700 uppercase tracking-wider">प्रथम सोपान</span>
+              <h4 class="text-base sm:text-lg font-bold text-trust-deepMaroon">वैष्णव रामानंदीय संत परंपरा एवं गुरु दीक्षा</h4>
+              <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+                पूज्य महाराज जी ने बाल्यकाल से ही संसार के नश्वर सुखों को त्यागकर चित्रकूट की पावन तपोभूमि में संतों के चरणों में वेद, उपनिषद एवं रामायण का गहन अध्ययन किया और भगवद्-सेवा का संकल्प लिया।
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="relative flex items-start gap-4 sm:gap-6 group">
+            <div class="shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-amber-400 bg-trust-deepMaroon text-amber-200 flex items-center justify-center shadow-lg overflow-hidden relative">
+              <svg viewBox="0 0 100 100" class="w-full h-full">
+                <circle cx="50" cy="50" r="50" fill="#78181b"></circle>
+                <polygon points="50,10 65,30 35,30" fill="#facc15"></polygon>
+                <circle cx="50" cy="55" r="20" fill="#fbbf24"></circle>
+                <path d="M30,85 C30,65 70,65 70,85 Z" fill="#ea580c"></path>
+              </svg>
+            </div>
+            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-amber-300 shadow-sm flex-1 group-hover:border-amber-500 transition-all">
+              <span class="text-[11px] font-bold text-amber-700 uppercase tracking-wider">द्वितीय सोपान</span>
+              <h4 class="text-base sm:text-lg font-bold text-trust-deepMaroon">श्री श्यामा श्याम जू ट्रस्ट एवं श्री चित्रकूट बालाजी धाम</h4>
+              <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+                युगल सरकार श्री राधा-कृष्ण एवं संकटमोचन हनुमान जी की कृपा से ट्रस्ट की औपचारिक स्थापना। दीन-दुखियों की सेवा, दैनिक भंडारा और गौ संवर्धन को जीवन का अभिन्न अंग बनाया गया।
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 3 -->
+          <div class="relative flex items-start gap-4 sm:gap-6 group">
+            <div class="shrink-0 w-16 h-16 sm:w-20 sm:h-20 rounded-full border-2 border-amber-400 bg-trust-deepMaroon text-amber-200 flex items-center justify-center shadow-lg overflow-hidden relative">
+              <svg viewBox="0 0 100 100" class="w-full h-full">
+                <circle cx="50" cy="50" r="50" fill="#2d060a"></circle>
+                <circle cx="50" cy="50" r="30" fill="#ea580c"></circle>
+                <text x="50" y="58" font-family="'Hind', serif" font-weight="700" font-size="24" fill="#ffffff" text-anchor="middle">राम</text>
+              </svg>
+            </div>
+            <div class="bg-white p-4 sm:p-5 rounded-2xl border border-amber-300 shadow-sm flex-1 group-hover:border-amber-500 transition-all">
+              <span class="text-[11px] font-bold text-amber-700 uppercase tracking-wider">वर्तमान महाअभियान</span>
+              <h4 class="text-base sm:text-lg font-bold text-trust-deepMaroon">अविरल गौ सेवा एवं भव्य श्री राम कथा महोत्सव</h4>
+              <p class="text-xs text-neutral-600 mt-1 leading-relaxed">
+                500+ गौवंश की नित्य सुरक्षा, राष्ट्रीय रामकथा आयोजनों के माध्यम से घर-घर में रामचरितमानस के संस्कारों की पुनर्स्थापना तथा लाखों भक्तों को धर्म मार्ग से जोड़ना।
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 3: The Journey Behind the Voice (Quick Facts Cards matching Screenshot) -->
+    <section class="py-14 bg-white border-b border-amber-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full">
+            GLIMPSE OF PUJYA GURUDEV
+          </span>
+          <h3 class="text-2xl sm:text-3xl md:text-4xl font-serif font-black text-trust-goldText mt-2">
+            The Journey Behind the Mission
+          </h3>
+          <p class="text-xs sm:text-sm text-neutral-600 mt-1">
+            पूज्य महंत श्री आलोक दास जी महाराज का संक्षिप्त जीवन सार एवं संन्यासी परिचय
+          </p>
+        </div>
+
+        <!-- 6 Facts Cards Grid matching Screenshot -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          
+          <div class="bg-[#fffdfa] p-5 rounded-2xl border border-amber-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center shrink-0 text-lg">
+              <i class="fa-solid fa-map-location-dot"></i>
+            </div>
+            <div>
+              <p class="text-[11px] text-neutral-500 font-semibold uppercase">Birth Place &amp; Teerth</p>
+              <h4 class="font-bold text-sm sm:text-base text-trust-deepMaroon mt-0.5">चित्रकूट धाम / पावन अवध क्षेत्र</h4>
+              <p class="text-xs text-neutral-600 mt-1">प्रभु श्री राम की तपोभूमि चित्रकूट एवं अवध की आध्यात्मिक धरा।</p>
+            </div>
+          </div>
+
+          <div class="bg-[#fffdfa] p-5 rounded-2xl border border-amber-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-orange-100 text-orange-700 flex items-center justify-center shrink-0 text-lg">
+              <i class="fa-solid fa-hands-praying"></i>
+            </div>
+            <div>
+              <p class="text-[11px] text-neutral-500 font-semibold uppercase">Spiritual Deeksha</p>
+              <h4 class="font-bold text-sm sm:text-base text-trust-deepMaroon mt-0.5">वैष्णव रामानंदीय संत दीक्षा</h4>
+              <p class="text-xs text-neutral-600 mt-1">सनातन संत समाज के सिद्ध आचार्यों द्वारा प्रदत्त पावन गुरु मंत्र।</p>
+            </div>
+          </div>
+
+          <div class="bg-[#fffdfa] p-5 rounded-2xl border border-amber-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center shrink-0 text-lg">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <div>
+              <p class="text-[11px] text-neutral-500 font-semibold uppercase">Tradition</p>
+              <h4 class="font-bold text-sm sm:text-base text-trust-deepMaroon mt-0.5">श्री राधा-कृष्ण व सीताराम उपासना</h4>
+              <p class="text-xs text-neutral-600 mt-1">श्यामा श्याम जू की भक्ति और मर्यादा पुरुषोत्तम के आदर्श।</p>
+            </div>
+          </div>
+
+          <div class="bg-[#fffdfa] p-5 rounded-2xl border border-amber-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-700 flex items-center justify-center shrink-0 text-lg">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <div>
+              <p class="text-[11px] text-neutral-500 font-semibold uppercase">Core Mission</p>
+              <h4 class="font-bold text-sm sm:text-base text-trust-deepMaroon mt-0.5">अविरल गौ रक्षा एवं धर्म जागरण</h4>
+              <p class="text-xs text-neutral-600 mt-1">निराश्रित गौवंश की सेवा और युवा पीढ़ी में वैदिक संस्कारों का संचार।</p>
+            </div>
+          </div>
+
+          <div class="bg-[#fffdfa] p-5 rounded-2xl border border-amber-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 text-lg">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div>
+              <p class="text-[11px] text-neutral-500 font-semibold uppercase">Life Motto</p>
+              <h4 class="font-bold text-sm sm:text-base text-trust-deepMaroon mt-0.5">"परोपकाराय सतां विभूतयः"</h4>
+              <p class="text-xs text-neutral-600 mt-1">संतों और सज्जनों का जीवन केवल दूसरों के कल्याण के लिए होता है।</p>
+            </div>
+          </div>
+
+          <div class="bg-[#fffdfa] p-5 rounded-2xl border border-amber-300 shadow-sm hover:shadow-md transition-all flex items-start gap-4">
+            <div class="w-11 h-11 rounded-xl bg-purple-100 text-purple-700 flex items-center justify-center shrink-0 text-lg">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div>
+              <p class="text-[11px] text-neutral-500 font-semibold uppercase">Main Centers</p>
+              <h4 class="font-bold text-sm sm:text-base text-trust-deepMaroon mt-0.5">चित्रकूट धाम, गोण्डा एवं अयोध्या</h4>
+              <p class="text-xs text-neutral-600 mt-1">गौशाला, अन्नपूर्णा रसोई एवं वैदिक गुरुकुल के सक्रिय केंद्र।</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 4: Life Introduction of Pujya Gurudev (Detailed Bio matching Screenshot) -->
+    <section class="py-14 bg-[#fbf5e8] border-b border-amber-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-3 text-xs sm:text-sm text-neutral-700 leading-relaxed">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-200 px-3 py-1 rounded-full">
+              BIOGRAPHY / पावन जीवन चरित
+            </span>
+            <h3 class="text-2xl sm:text-4xl font-serif font-black text-trust-goldText mt-2">
+              Life Introduction of Pujya Mahant Ji
+            </h3>
+            <p class="font-semibold text-trust-deepMaroon">
+              "धर्म की रक्षा तभी संभव है जब हम समाज के अंतिम व्यक्ति के आंसू पोंछ सकें और मूक गौमाता का संरक्षण कर सकें।"
+            </p>
+            <p>
+              पूज्य महंत श्री आलोक दास जी महाराज का संपूर्ण जीवन सनातन धर्म, गौ सेवा और लोक-कल्याण के लिए समर्पित है। बाल्यकाल से ही आपका मन सांसारिक प्रपंचों से विरक्त होकर प्रभु भक्ति, साधना और भगवत्-नाम संकीर्तन में लीन रहा। 
+            </p>
+            <p>
+              चित्रकूट की पावन मंदाकिनी के तट पर संतों के चरणों में बैठकर आपने भक्ति और धर्म के गूढ़ रहस्यों को आत्मसात किया। इसके उपरांत आपने श्री श्यामा श्याम जू ट्रस्ट की स्थापना कर समाज में सेवा का एक विराट संकल्प प्रस्तुत किया। 
+            </p>
+            <p>
+              महाराज जी का मानना है कि केवल प्रवचन देना पर्याप्त नहीं है, बल्कि क्रियात्मक रूप से गौशाला का संचालन करना, भूखों को अन्न देना और निर्धनों की चिकित्सा व्यवस्था करना ही संन्यास का वास्तविक धर्म है।
+            </p>
+          </div>
+
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="w-72 h-88 rounded-3xl border-4 border-amber-400 p-2 bg-white shadow-2xl overflow-hidden relative group">
+              <div class="w-full h-full rounded-2xl bg-gradient-to-tr from-[#991b1b] to-[#450a0a] flex items-center justify-center text-center p-4 text-white relative">
+                <div>
+                  <i class="fa-solid fa-om text-6xl text-amber-300 mb-3"></i>
+                  <h4 class="text-lg font-bold">महंत श्री आलोक दास जी महाराज</h4>
+                  <p class="text-xs text-amber-200 mt-1">अध्यक्ष: श्री श्यामा श्याम जू ट्रस्ट</p>
+                  <p class="text-[10px] text-amber-100/70 mt-2">चित्रकूट धाम एवं गोण्डा</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 5: Guidance of the saints, initiation by divine grace (matching Screenshot & Images 3/4) -->
+    <section class="py-14 bg-white border-b border-amber-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Image of Sant Milan (From user prompt Images 3, 4) -->
+          <div class="lg:col-span-5 order-2 lg:order-1 flex justify-center">
+            <div class="w-full max-w-md h-72 sm:h-80 rounded-3xl border-4 border-amber-400 p-2 bg-amber-50 shadow-xl overflow-hidden relative">
+              <div class="w-full h-full rounded-2xl bg-gradient-to-br from-trust-deepMaroon via-trust-navMaroon to-trust-topMaroon p-[2%]">
+                <div class="relative w-full h-full rounded-xl overflow-hidden">
+                  <img src="sant-sanidhya.jpg" alt="पूज्य संतों का सानिध्य एवं कथा निमंत्रण समर्पण" class="absolute inset-0 w-full h-full object-cover object-[50%_20%]">
+                  <!-- Brand-color caption gradient -->
+                  <div class="absolute inset-x-0 bottom-0 bg-gradient-to-t from-trust-deepMaroon/85 via-trust-deepMaroon/40 to-transparent px-3 pb-3 pt-10 text-left">
+                    <span class="bg-amber-400 text-trust-deepMaroon text-[10px] font-black px-2.5 py-0.5 rounded-full uppercase">पावन संत सानिध्य</span>
+                    <h4 class="text-sm font-bold text-white mt-1.5 drop-shadow-md">वरिष्ठ पूज्य संतों का आशीर्वाद एवं मार्गदर्शन</h4>
+                    <p class="text-[11px] text-amber-100/90 mt-0.5 leading-snug">अयोध्या, चित्रकूट एवं वृंदावन के पूज्य संतों के श्रीचरणों में कथा निमंत्रण समर्पण</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bulleted Details from Screenshot -->
+          <div class="lg:col-span-7 order-1 lg:order-2 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full">
+              BLESSINGS OF THE SAINTS
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-serif font-black text-trust-goldText">
+              Guidance of the saints, initiation by divine grace
+            </h3>
+            <p class="text-xs sm:text-sm text-neutral-600">
+              परम पावन संत समाज का निरंतर आशीर्वाद ही श्री श्यामा श्याम जू ट्रस्ट की आत्मिक शक्ति और प्रेरणा का स्रोत है:
+            </p>
+
+            <div class="space-y-3">
+              <div class="flex items-start gap-3 bg-amber-50/70 p-3.5 rounded-xl border border-amber-300/60">
+                <span class="text-amber-700 text-base mt-0.5">⋄</span>
+                <p class="text-xs text-neutral-700 leading-relaxed">
+                  <strong>चित्रकूट एवं अयोध्या धाम के सिद्ध संतों का सानिध्य:</strong> पूज्य महाराज जी को श्रीधाम चित्रकूट और श्रीराम जन्मभूमि अयोध्या के शीर्ष संतों, पीठाधीश्वरों एवं महामंडलेश्वरों का निरंतर मार्गदर्शन एवं शुभाशीर्वाद प्राप्त है।
+                </p>
+              </div>
+
+              <div class="flex items-start gap-3 bg-amber-50/70 p-3.5 rounded-xl border border-amber-300/60">
+                <span class="text-amber-700 text-base mt-0.5">⋄</span>
+                <p class="text-xs text-neutral-700 leading-relaxed">
+                  <strong>अखंड सेवा संकल्प का विस्तार:</strong> संतों की प्रेरणा से ही ट्रस्ट ने विशाल गौशाला, नित्य अन्नपूर्णा भण्डारा और 17 से 28 नवंबर 2026 तक होने वाले भव्य 'श्री राम कथा महोत्सव' का विराट बीड़ा उठाया है।
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 6: Divya Darbar & Press Conference (matching Screenshot & Images 5-9) -->
+    <section class="py-14 bg-[#fbf6ec] border-b border-amber-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-7 space-y-4">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-200 px-3 py-1 rounded-full">
+              PUBLIC DISCOURSE &amp; SATSANG
+            </span>
+            <h3 class="text-2xl sm:text-3xl font-serif font-black text-trust-goldText">
+              दिव्य संवाद, जन-सुनवाई एवं मीडिया संवाद
+            </h3>
+            <p class="text-xs sm:text-sm text-neutral-600 leading-relaxed">
+              महाराज जी का द्वार प्रत्येक श्रद्धालु, पीड़ित और असहाय जन के लिए सदैव खुला रहता है। देश-विदेश से आने वाले भक्त अपने आध्यात्मिक एवं पारिवारिक संशयों के समाधान हेतु सानिध्य प्राप्त करते हैं।
+            </p>
+            <div class="space-y-2 text-xs text-neutral-700">
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-600"></i>
+                <span>राष्ट्रीय मीडिया (VIP News, दैनिक जागरण, RK News 24) द्वारा सेवा कार्यों की व्यापक सराहना</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-600"></i>
+                <span>सप्ताह में नित्य सत्संग, वैदिक मंत्रोच्चार एवं व्यक्तिगत आध्यात्मिक परामर्श</span>
+              </div>
+              <div class="flex items-center gap-2">
+                <i class="fa-solid fa-circle-check text-amber-600"></i>
+                <span>व्यसनमुक्ति एवं युवा पीढ़ी में सनातनी संस्कारों का नवजागरण</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-5 flex justify-center">
+            <div class="w-full max-w-md h-64 sm:h-72 rounded-3xl border-4 border-amber-400 p-2 bg-white shadow-xl overflow-hidden relative">
+              <div class="w-full h-full rounded-2xl bg-gradient-to-tr from-trust-deepMaroon to-trust-topMaroon flex flex-col items-center justify-center p-4 text-white text-center">
+                <i class="fa-solid fa-microphone-lines text-4xl text-amber-300 mb-2"></i>
+                <h4 class="font-bold text-base">राष्ट्रीय प्रेस वार्ता एवं धर्म संवाद</h4>
+                <p class="text-xs text-amber-200 mt-1">भव्य श्री राम कथा महोत्सव एवं विशाल भण्डारे की आधिकारिक घोषणा</p>
+                <div class="mt-3 flex gap-2">
+                  <span class="bg-black/50 text-[10px] px-2 py-0.5 rounded text-amber-200">गोण्डा, उ.प्र.</span>
+                  <span class="bg-black/50 text-[10px] px-2 py-0.5 rounded text-amber-200">नवंबर 2026</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 7: Pujya Gurudev's Resolutions (Maha Sankalp from Screenshot) -->
+    <section class="py-14 bg-white border-b border-amber-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="text-center mb-10">
+          <span class="text-xs font-bold uppercase tracking-wider text-amber-800 bg-amber-100 px-3 py-1 rounded-full">
+            RESOLUTIONS FOR HUMANITY
+          </span>
+          <h3 class="text-2xl sm:text-3xl md:text-4xl font-serif font-black text-trust-goldText mt-2">
+            Pujya Gurudev's Resolutions (पावन महासंकल्प)
+          </h3>
+          <p class="text-xs sm:text-sm text-neutral-600 mt-1">
+            श्री श्यामा श्याम जू ट्रस्ट के माध्यम से संचालित होने वाले प्रमुख राष्ट्रव्यापी संकल्प
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
+          
+          <div class="bg-amber-50/60 p-5 rounded-2xl border border-amber-300 shadow-sm text-center">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-200 text-amber-900 flex items-center justify-center text-xl mb-3">
+              <i class="fa-solid fa-cow"></i>
+            </div>
+            <h4 class="font-bold text-sm text-trust-deepMaroon">सम्पूर्ण गौ संवर्धन</h4>
+            <p class="text-xs text-neutral-600 mt-1">प्रत्येक निराश्रित गौमाता को आश्रय, चारा एवं औषधीय चिकित्सा की स्थायी व्यवस्था।</p>
+          </div>
+
+          <div class="bg-amber-50/60 p-5 rounded-2xl border border-amber-300 shadow-sm text-center">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-200 text-amber-900 flex items-center justify-center text-xl mb-3">
+              <i class="fa-solid fa-bowl-food"></i>
+            </div>
+            <h4 class="font-bold text-sm text-trust-deepMaroon">अन्नपूर्णा महाभण्डारा</h4>
+            <p class="text-xs text-neutral-600 mt-1">तीर्थ क्षेत्र में कोई भी साधु, यात्री या भूखा न सोए—नित्य निशुल्क सात्विक भोजन।</p>
+          </div>
+
+          <div class="bg-amber-50/60 p-5 rounded-2xl border border-amber-300 shadow-sm text-center">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-200 text-amber-900 flex items-center justify-center text-xl mb-3">
+              <i class="fa-solid fa-book-quran"></i>
+            </div>
+            <h4 class="font-bold text-sm text-trust-deepMaroon">वैदिक गुरुकुल स्थापना</h4>
+            <p class="text-xs text-neutral-600 mt-1">संस्कृत, वेद, रामायण एवं आधुनिक विज्ञान के समन्वय से युक्त आदर्श गुरुकुल।</p>
+          </div>
+
+          <div class="bg-amber-50/60 p-5 rounded-2xl border border-amber-300 shadow-sm text-center">
+            <div class="w-12 h-12 mx-auto rounded-full bg-amber-200 text-amber-900 flex items-center justify-center text-xl mb-3">
+              <i class="fa-solid fa-hand-holding-heart"></i>
+            </div>
+            <h4 class="font-bold text-sm text-trust-deepMaroon">निर्धन कन्या विवाह</h4>
+            <p class="text-xs text-neutral-600 mt-1">आर्थिक रूप से कमजोर परिवारों की कन्याओं का वैदिक रीति से विवाह एवं गृहस्थी सहयोग।</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION 8: Cinematic Quote Banners (Bottom of Screenshot) -->
+    <section class="py-12 bg-neutral-900 text-white">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <!-- Quote Card 1 (Dark Indigo / Blue tone like screenshot) -->
+          <div class="rounded-3xl p-6 sm:p-8 bg-gradient-to-r from-blue-950 via-slate-900 to-indigo-950 border-2 border-blue-500/40 relative overflow-hidden shadow-2xl flex flex-col justify-between min-h-[220px]">
+            <div class="text-3xl text-blue-400 opacity-60"><i class="fa-solid fa-quote-left"></i></div>
+            <div class="my-3">
+              <h4 class="text-xl sm:text-2xl font-serif font-black text-amber-200 leading-snug">
+                "यह जीवन केवल प्रभु श्री श्यामा श्याम जू और गौमाता की सेवा के लिए है।"
+              </h4>
+              <p class="text-xs text-blue-200/80 mt-2 font-medium">
+                - पूज्य महंत श्री आलोक दास जी महाराज (अध्यक्ष, श्री श्यामा श्याम जू ट्रस्ट)
+              </p>
+            </div>
+            <div class="text-right text-xs text-amber-400 font-bold">
+              सेवा ही परम धर्म ⋄
+            </div>
+          </div>
+
+          <!-- Quote Card 2 (Crimson / Violet tone like screenshot) -->
+          <div class="rounded-3xl p-6 sm:p-8 bg-gradient-to-r from-purple-950 via-neutral-900 to-rose-950 border-2 border-rose-500/40 relative overflow-hidden shadow-2xl flex flex-col justify-between min-h-[220px]">
+            <div class="text-3xl text-rose-400 opacity-60"><i class="fa-solid fa-quote-left"></i></div>
+            <div class="my-3">
+              <h4 class="text-xl sm:text-2xl font-serif font-black text-rose-200 leading-snug">
+                "A Life Dedicated to God, Gau Mata and the Welfare of Society."
+              </h4>
+              <p class="text-xs text-rose-200/80 mt-2 font-medium">
+                - Dedicated to the upliftment of Sanatan Values &amp; Human Compassion
+              </p>
+            </div>
+            <div class="text-right text-xs text-amber-400 font-bold">
+              ॥ सत्यं शिवं सुन्दरम् ॥
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  
+  </main>
+
+  <footer id="contact" class="bg-trust-deepMaroon text-amber-100 py-10 border-t-4 border-amber-400">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pb-8 border-b border-amber-700/50">
+        <!-- Col 1: Trust Intro -->
+        <div class="space-y-3 md:col-span-1">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-full bg-amber-500 text-trust-deepMaroon flex items-center justify-center text-lg font-bold">
+              ॐ
+            </div>
+            <div>
+              <h4 class="font-serif font-black text-base text-amber-300">Shri Shayma Shyam Ju Trust</h4>
+              <p class="text-[11px] text-amber-200/80">Reg. No. 427/2020</p>
+            </div>
+          </div>
+          <p class="text-xs text-amber-100/80 leading-relaxed">
+            सनातन धर्म, गौ संवर्धन एवं समाज सेवा को समर्पित न्यास। परम पूज्य महंत श्री आलोक दास जी महाराज का पावन सानिध्य।
+          </p>
+        </div>
+
+        <!-- Col 2: Quick Links -->
+        <div class="text-xs space-y-2">
+          <h5 class="font-bold text-amber-300 uppercase tracking-wider text-[11px] mb-2">मुख्य पृष्ठ</h5>
+          <div><a class="hover:text-amber-300 transition-colors" href="/">मुख्य पृष्ठ (Home)</a></div>
+          <div><a class="hover:text-amber-300 transition-colors" href="/about">संस्था परिचय (About Us)</a></div>
+          <div><a class="hover:text-amber-300 transition-colors" href="/quotes">मानस श्लोक व कोट्स (Quotes)</a></div>
+          <div><a class="hover:text-amber-300 transition-colors" href="/#activities">सेवा प्रकल्प (Our Activities)</a></div>
+          <div><a class="hover:text-amber-300 transition-colors" href="/#gallery">चित्र वीथिका (Gallery)</a></div>
+        </div>
+
+        <!-- Col 3: Seva & Policies -->
+        <div class="text-xs space-y-2">
+          <h5 class="font-bold text-amber-300 uppercase tracking-wider text-[11px] mb-2">सेवा व नियम</h5>
+          <div><a class="hover:text-amber-300 transition-colors" href="/donate">ऑनलाइन दान (Donation)</a></div>
+          <div><a class="hover:text-amber-300 transition-colors" href="/contact">संपर्क सूत्र (Contact Us)</a></div>
+          <div><a class="hover:text-amber-300 transition-colors" href="/privacy">गोपनीयता नीति (Privacy Policy)</a></div>
+        </div>
+
+        <!-- Col 4: Contact helpline -->
+        <div class="text-xs space-y-2.5">
+          <h5 class="font-bold text-amber-300 uppercase tracking-wider text-[11px] mb-2">संपर्क एवं धाम</h5>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-phone text-amber-400"></i>
+            <a href="tel:+919565247444" class="hover:text-amber-300 font-bold">+91 9565247444</a>
+          </div>
+          <div class="flex items-center gap-2">
+            <i class="fa-solid fa-envelope text-amber-400"></i>
+            <a href="mailto:shyamaju@gmail.com" class="hover:text-amber-300">shyamaju@gmail.com</a>
+          </div>
+          <div class="flex items-start gap-2">
+            <i class="fa-solid fa-location-dot text-amber-400 mt-0.5"></i>
+            <span class="text-amber-100/90 leading-tight">श्री चित्रकूट बालाजी धाम, चित्रकूट एवं गोण्डा (उ.प्र.)</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-amber-200/60 gap-3">
+        <p>© 2026 Shri Shayma Shyam Ju Trust. सर्व अधिकार सुरक्षित।</p>
+        <div class="flex space-x-4">
+          <a class="hover:text-amber-300" href="/privacy">Privacy Policy</a>
+          <span>•</span>
+          <a class="hover:text-amber-300" href="/contact">Contact Us</a>
+          <span>•</span>
+          <a class="hover:text-amber-300" href="/donate">80G Donation</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- About Video Modal (shared with home page) -->
+<div id="about-video-modal" class="fixed inset-0 z-50 bg-black/90 backdrop-blur-md hidden items-center justify-center p-4">
+    <div class="bg-neutral-900 rounded-3xl max-w-2xl w-full border-2 border-amber-400 shadow-2xl overflow-hidden relative text-white">
+      <div class="p-4 bg-trust-deepMaroon flex justify-between items-center">
+        <h4 class="font-bold text-sm text-amber-200">Shri Shyama Shyam Ju Trust Documentary</h4>
+        <button onclick="closeAboutVideo()" class="text-amber-300 hover:text-white text-lg"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="p-6 text-center space-y-4">
+        <div class="w-full h-64 bg-black rounded-2xl flex flex-col items-center justify-center border border-amber-400/40 p-4">
+          <i class="fa-solid fa-circle-play text-6xl text-amber-400 mb-2 animate-bounce"></i>
+          <p class="font-bold text-sm text-amber-200">ट्रस्ट वृत्तचित्र एवं पूज्य महाराज जी का उद्बोधन</p>
+          <p class="text-xs text-neutral-400">चित्रकूट धाम • गोण्डा • गौशाला एवं अन्नपूर्णा दर्शन</p>
+        </div>
+        <p class="text-xs text-neutral-300 leading-relaxed">
+          इस पावन वृत्तचित्र में पूज्य महंत श्री आलोक दास जी महाराज के संन्यास जीवन, गौ सेवा प्रकल्पों और आगामी श्री राम कथा महोत्सव का विस्तृत विवरण प्रस्तुत है।
+        </p>
+        <button onclick="closeAboutVideo()" class="bg-amber-400 hover:bg-amber-300 text-trust-deepMaroon font-bold px-6 py-2 rounded-full text-xs">
+          बंद करें
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // --- About video modal ---
+    function openAboutVideo() {
+      document.getElementById('about-video-modal').classList.remove('hidden');
+      document.getElementById('about-video-modal').classList.add('flex');
+    }
+
+    function closeAboutVideo() {
+      document.getElementById('about-video-modal').classList.add('hidden');
+      document.getElementById('about-video-modal').classList.remove('flex');
+    }
+  </script>
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobile-nav-menu');
+      const icon = document.getElementById('mobile-menu-icon');
+      if (menu) {
+        menu.classList.toggle('hidden');
+        if (icon) icon.className = menu.classList.contains('hidden') ? 'fa-solid fa-bars text-xl' : 'fa-solid fa-xmark text-xl';
+      }
+    }
+  </script>
+</body>
+</html>
